@@ -1,4 +1,4 @@
-content = """# BadgeAppFTP
+content = # BadgeAppFTP
 **PhD Research Project | University of Djelfa**
 **BELHADJ Mohamed Ali**
 **Module:** File Transfer Protocol (FTP) / Network Protocols

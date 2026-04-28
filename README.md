@@ -1,38 +1,63 @@
 # BadgeAppFTP
-**PhD Research Project | University of Djelfa**  
+
+**PhD Research Project**  
+**University of Ziane Achour – Djelfa**  
 **Module:** FTP  
 **Author:** BELHADJ Mohamed Ali  
 
 ---
 
-## 1. Project Overview
-`BadgeAppFTP` is a specialized research application developed to bridge badge management systems with robust file transfer mechanisms. The project investigates the automation, reliability, and security of synchronizing badge-related data—including user credentials, access logs, and profile assets—across distributed network nodes using the FTP framework.
+## 📋 Project Overview
 
-This work is conducted as part of the doctoral curriculum at the **University of Ziane Achour (Djelfa)** to analyze protocol efficiency in academic and professional infrastructure.
+**BadgeAppFTP** is a specialized research application developed to automate the secure synchronization of badge management data using FTP-based protocols. The application facilitates the reliable transfer of employee badge information — including user credentials, access logs, and profile assets — between local badge systems and centralized remote servers.
 
----
-
-## 2. Key Features
-- **Automated Synchronization:** Streamlined uploading of badge data to a centralized FTP server.
-- **Protocol Flexibility:** Support for standard FTP and secure variants (FTPS/SFTP) to ensure data confidentiality.
-- **Audit Logging:** Generation of detailed transfer logs for monitoring system integrity and access history.
-- **Scalable Architecture:** Designed to handle batch processing of badge records and associated media files.
+This project is part of doctoral research at the **University of Ziane Achour (Djelfa)**, focusing on evaluating the efficiency, reliability, and security of file transfer protocols in academic and professional badge management infrastructures.
 
 ---
 
-## 3. Technical Implementation
-The application utilizes a client-server architecture where the **BadgeApp** functions as the primary client, pushing updates to remote nodes within the university's lab environment or cloud storage.
+## ✨ Key Features
+
+- **Automated Synchronization** – Seamless uploading of badge data and associated media files to a centralized FTP server
+- **Protocol Flexibility** – Support for standard FTP, FTPS, and SFTP protocols
+- **Secure Data Transfer** – Implementation of secure variants to ensure confidentiality and integrity of sensitive information
+- **Comprehensive Audit Logging** – Detailed logging of all transfer operations for monitoring and traceability
+- **Scalable Architecture** – Designed to efficiently handle batch processing of badge records and media assets
+
+---
+
+## 🖥️ Application Screenshots
+
+### Login Interface
+![Login Screen](Screen/login.png)
+
+### Dashboard
+![Dashboard](Screen/dashboard.png)
+
+### New Employee Registration
+![New Employee](Screen/New%20Employee.png)
+
+### Badge Preview
+![Badge Preview](Screen/Badge%20Preview.png)
+
+### Project File Structure
+![File Structure](Screen/File%20Structure.png)
+
+---
+
+## 🛠️ Technical Implementation
+
+The application follows a **client-server architecture**, where **BadgeAppFTP** serves as the client responsible for collecting badge data and securely pushing it to remote FTP/FTPS/SFTP servers.
 
 ### Prerequisites
-- **Environment:** Python 3.10+ (or relevant runtime)
-- **Protocols:** FTP, FTPS, or SFTP
-- **Key Dependencies:** `ftplib`, `python-dotenv`
+- **Python** 3.10 or higher
+- Access to an FTP/FTPS/SFTP server
+- Required dependencies listed in `requirements.txt`
 
 ---
 
-## 4. Installation & Setup
+## 📥 Installation & Setup
 
-### Clone the Repository
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/blhjmedali/BadgeAppFTP.git
 cd BadgeAppFTP

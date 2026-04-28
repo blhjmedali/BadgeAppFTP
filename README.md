@@ -1,6 +1,7 @@
 # BadgeAppFTP
-**PhD Research Project | University of Djelfa** **Module:** (FTP) 
-**BELHADJ Mohamed Ali **
+**PhD Research Project | University of Djelfa**  
+**Module:** FTP  
+**Author:** BELHADJ Mohamed Ali  
 
 ---
 
@@ -12,10 +13,10 @@ This work is conducted as part of the doctoral curriculum at the **University of
 ---
 
 ## 2. Key Features
-* **Automated Synchronization:** Streamlined uploading of badge data to a centralized FTP server.
-* **Protocol Flexibility:** Support for standard FTP and secure variants (FTPS/SFTP) to ensure data confidentiality.
-* **Audit Logging:** Generation of detailed transfer logs for monitoring system integrity and access history.
-* **Scalable Architecture:** Designed to handle batch processing of badge records and associated media files.
+- **Automated Synchronization:** Streamlined uploading of badge data to a centralized FTP server.
+- **Protocol Flexibility:** Support for standard FTP and secure variants (FTPS/SFTP) to ensure data confidentiality.
+- **Audit Logging:** Generation of detailed transfer logs for monitoring system integrity and access history.
+- **Scalable Architecture:** Designed to handle batch processing of badge records and associated media files.
 
 ---
 
@@ -23,9 +24,9 @@ This work is conducted as part of the doctoral curriculum at the **University of
 The application utilizes a client-server architecture where the **BadgeApp** functions as the primary client, pushing updates to remote nodes within the university's lab environment or cloud storage.
 
 ### Prerequisites
-* **Environment:** Python 3.10+ (or relevant runtime)
-* **Protocols:** FTP, FTPS, or SFTP
-* **Key Dependencies:** `ftplib`, `python-dotenv`
+- **Environment:** Python 3.10+ (or relevant runtime)
+- **Protocols:** FTP, FTPS, or SFTP
+- **Key Dependencies:** `ftplib`, `python-dotenv`
 
 ---
 
@@ -33,5 +34,5 @@ The application utilizes a client-server architecture where the **BadgeApp** fun
 
 ### Clone the Repository
 ```bash
-git clone [https://github.com/blhjmedali/BadgeAppFTP.git](https://github.com/blhjmedali/BadgeAppFTP.git)
+git clone https://github.com/blhjmedali/BadgeAppFTP.git
 cd BadgeAppFTP

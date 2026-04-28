@@ -1,0 +1,38 @@
+{% load static %}
+<div class="badge-card">
+  <div class="badge-header">
+    <div class="badge-logo">
+      <span>ACME CORP</span>
+    </div>
+    <div style="font-size: 11px; opacity: .9;">Employee ID</div>
+  </div>
+
+  <div class="badge-body">
+    <div>
+      {% if employee.photo %}
+        <img class="badge-photo" src="{{ employee.photo.url }}" alt="Photo" />
+      {% else %}
+        <div class="badge-photo d-flex align-items-center justify-content-center text-muted" style="font-size: 10px;">NO PHOTO</div>
+      {% endif %}
+    </div>
+    <div class="badge-meta">
+      <div class="name">{{ employee.full_name }}</div>
+      <div class="title">{{ employee.job_title }}</div>
+      <div class="dept">{{ employee.department.name }}</div>
+      <div class="mt-2" style="font-size: 11px; color: #111827;"><strong>{{ employee.employee_id }}</strong></div>
+    </div>
+  </div>
+
+  <div class="badge-footer">
+    <div class="badge-id">
+      <div class="text-muted" style="font-size: 10px;">Company</div>
+      <div style="font-weight: 600;">ACME CORP</div>
+    </div>
+    {% if employee.qr_code %}
+      <img class="badge-qr" src="{{ employee.qr_code.url }}" alt="QR code" />
+    {% else %}
+      <div class="badge-qr d-flex align-items-center justify-content-center text-muted" style="font-size: 9px;">NO QR</div>
+    {% endif %}
+  </div>
+</div>
+

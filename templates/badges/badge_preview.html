@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Badge · {{ employee.full_name }}{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-between mb-3">
+  <div>
+    <h1 class="h3 mb-1">Badge preview</h1>
+    <div class="text-muted">{{ employee.full_name }} · {{ employee.employee_id }}</div>
+  </div>
+  <div class="d-flex gap-2">
+    <a class="btn btn-outline-secondary" href="{% url 'employees:detail' employee.pk %}">Back</a>
+    <a class="btn btn-primary" href="{% url 'badges:pdf' employee.pk %}">Download PDF</a>
+  </div>
+</div>
+
+<div class="card shadow-sm">
+  <div class="card-body">
+    <div class="d-flex justify-content-center py-3">
+      {% include "badges/_badge_card.html" with employee=employee %}
+    </div>
+    <div class="text-muted small">
+      Tip: The exported PDF uses the same layout and ID-1 card size (86mm × 54mm).
+    </div>
+  </div>
+</div>
+{% endblock %}
+

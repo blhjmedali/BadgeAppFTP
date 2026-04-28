@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @page { size: 86mm 54mm; margin: 0; }
+      body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+      .card { width: 86mm; height: 54mm; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; }
+      .header { background: #0d6efd; color: #fff; padding: 8px 10px; }
+      .brand { font-weight: bold; letter-spacing: .3px; font-size: 13px; }
+      .body { padding: 10px; }
+      .grid { width: 100%; }
+      .photo { width: 30mm; height: 36mm; border: 1px solid #e5e7eb; border-radius: 8px; background: #f3f4f6; }
+      .name { font-weight: bold; font-size: 13px; }
+      .title { font-size: 11px; color: #374151; }
+      .dept { font-size: 11px; color: #6b7280; }
+      .eid { margin-top: 6px; font-size: 11px; }
+      .footer { padding: 0 10px 10px 10px; }
+      .qr { width: 18mm; height: 18mm; border: 1px solid #e5e7eb; border-radius: 6px; padding: 2px; }
+      .muted { font-size: 9px; color: #6b7280; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="header">
+        <div class="brand">ACME CORP</div>
+        <div class="muted" style="color: #dbeafe;">Employee ID Badge</div>
+      </div>
+
+      <div class="body">
+        <table class="grid">
+          <tr>
+            <td style="width: 32mm; vertical-align: top;">
+              {% if employee.photo %}
+                <img class="photo" src="{{ employee.photo.path }}" />
+              {% else %}
+                <div class="photo"></div>
+              {% endif %}
+            </td>
+            <td style="vertical-align: top;">
+              <div class="name">{{ employee.full_name }}</div>
+              <div class="title">{{ employee.job_title }}</div>
+              <div class="dept">{{ employee.department.name }}</div>
+              <div class="eid"><strong>{{ employee.employee_id }}</strong></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="footer">
+        <table class="grid">
+          <tr>
+            <td style="vertical-align: bottom;">
+              <div class="muted">Company</div>
+              <div style="font-size: 11px; font-weight: bold;">ACME CORP</div>
+            </td>
+            <td style="text-align: right; vertical-align: bottom;">
+              {% if employee.qr_code %}
+                <img class="qr" src="{{ employee.qr_code.path }}" />
+              {% else %}
+                <div class="qr"></div>
+              {% endif %}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+

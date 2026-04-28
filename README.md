@@ -1,11 +1,21 @@
+# Ziane Achour University of Djelfa  
+## Ministry of Higher Education and Scientific Research  
+### People’s Democratic Republic of Algeria  
+
+---
+
+
 <div align="center">
   <img src="Screen/logo.png" alt="University of Ziane Achour Logo" width="180" />
 </div>
 
+### Faculty of Sciences and Technology  
+### Department of Computer Science  
+
 # BadgeAppFTP
 
 **PhD Research Project**  
-**University of Ziane Achour – Djelfa**  
+ 
 **Module:** FTP  
 **Author:** BELHADJ Mohamed Ali  
 

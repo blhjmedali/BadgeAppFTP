@@ -1,6 +1,10 @@
+<div align="center">
+  <img src="Screen/logo.png" alt="University of Ziane Achour Logo" width="180" />
+</div>
+
 # BadgeAppFTP
 
-**PhD Research Project**   
+**PhD Research Project**  
 **University of Ziane Achour – Djelfa**  
 **Module:** FTP  
 **Author:** BELHADJ Mohamed Ali  

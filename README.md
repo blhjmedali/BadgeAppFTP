@@ -1,6 +1,7 @@
-content = # BadgeAppFTP
-**PhD Research Project | University of Djelfa**
-**BELHADJ Mohamed Ali**
+**content** = BadgeAppFTP
+**Researcher**: BELHADJ Mohamed Ali
+**Institution**: University of Djelfa
+**Field**: Computer Science 
 **Module:** File Transfer Protocol (FTP) / Network Protocols
 
 ## 1. Project Overview
